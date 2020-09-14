@@ -8,10 +8,9 @@ public class MyMain {
         double one = 1;
         do { 
             qwe = one;
-            qwe = (Math.random()+x);
+            qwe = (Math.random()* x);
             one = (qwe + x/qwe)/2;
-        }
-        while (Math.abs(qwe-one) > 0.00001);
+        } while (Math.abs(qwe - one) > 0.00001);
         return one;
     }
 
